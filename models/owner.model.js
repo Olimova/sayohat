@@ -38,7 +38,7 @@ const Owner = sequelize.define("owner", {
   },
   role: {
     type: DataTypes.ENUM("owner"),
-    defaultValue: "",
+    defaultValue: "owner",
   },
 });
 

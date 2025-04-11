@@ -200,7 +200,7 @@ const sendOtp = async (req, res) => {
   try {
     const { email } = req.body;
 
-    const owner = await Owner.findOne({ email });
+    const owner = await Owner.findOne({where:{ email} });
     if (!owner) return res.status(404).json({ message: "Owner topilmadi" });
 
     const otp = Math.floor(100000 + Math.random() * 900000);
