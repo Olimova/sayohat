@@ -1,0 +1,36 @@
+{
+  "port": 3005,
+  "db_host": "localhost",
+  "db_username": "postgres",
+  "db_password": "1111",
+  "db_port": 5432,
+  "db_name": "sayohat",
+
+"jwt":{
+  "admin": {
+    "access_key": "AdminAccessTokenSecretKey",
+    "refresh_key": "AdminRefreshTokenSecretKey",
+    "access_time": "30m",
+    "refresh_time": "1h"
+  },
+  "client": {
+    "access_key": "ClientAccessTokenSecretKey",
+    "refresh_key": "ClientRefreshTokenSecretKey",
+    "access_time": "30m",
+    "refresh_time": "1h"
+  },
+  "owner": {
+    "access_key": "OwnerAccessTokenSecretKey",
+    "refresh_key": "OwnerRefreshTokenSecretKey",
+    "access_time": "30m",
+    "refresh_time": "1h"
+  }
+},
+
+
+  "smtp_password": "xjsuwwmmkewbjvdj",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "ozoda4662@gmail.com",
+  "api_url": "http://localhost:3005"
+}
